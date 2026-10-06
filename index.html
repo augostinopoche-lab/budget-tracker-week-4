@@ -1,108 +1,215 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SpendWise Dashboard</title>
-
-```
-<link rel="stylesheet" href="style.css">
-```
-
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-```
-<div class="dashboard">
+    <div class="dashboard">
 
-    <!-- Sidebar -->
-    <aside class="sidebar">
-        <h2 class="logo">SpendWise</h2>
+        <!-- Sidebar -->
+        <aside class="sidebar">
 
-        <nav class="navigation">
-            <a href="#" class="nav-item active">Dashboard</a>
-            <a href="#" class="nav-item">Expenses</a>
-            <a href="#" class="nav-item">Budget</a>
-            <a href="#" class="nav-item">Savings</a>
-            <a href="#" class="nav-item">Reports</a>
-            <a href="#" class="nav-item">Settings</a>
-        </nav>
-    </aside>
-
-    <!-- Main Content -->
-    <main class="main-content">
-
-        <!-- Header -->
-        <header class="header">
-            <div>
-                <h1>SpendWise Dashboard</h1>
-                <p>Track and manage your finances</p>
+            <div class="logo">
+                <h2>SpendWise</h2>
+                <p>Smart Money Management</p>
             </div>
 
-            <div class="profile">
-                <span>Welcome, Poche</span>
-            </div>
-        </header>
+            <nav class="sidebar-nav">
+                <a href="#" class="active">Dashboard</a>
+                <a href="#">Expenses</a>
+                <a href="#">Budget</a>
+                <a href="#">Reports</a>
+                <a href="#">Savings</a>
+                <a href="#">Settings</a>
+            </nav>
 
-        <!-- Dashboard Cards -->
-        <section class="dashboard-cards">
+        </aside>
 
-            <article class="card">
+
+        <!-- Main Content -->
+        <div class="main-content">
+
+            <!-- Header -->
+            <header class="header">
+
                 <div>
-                    <h3>Food</h3>
-                    <p>Monthly spending</p>
+                    <h1>Dashboard</h1>
+                    <p>Welcome to your SpendWise financial dashboard.</p>
                 </div>
-                <strong>KSh 4,000</strong>
-            </article>
 
-            <article class="card">
-                <div>
-                    <h3>Transport</h3>
-                    <p>Monthly spending</p>
+                <div class="profile">
+                    <span>👤</span>
+                    <strong>Poche</strong>
                 </div>
-                <strong>KSh 5,000</strong>
-            </article>
 
-            <article class="card">
-                <div>
-                    <h3>Rent</h3>
-                    <p>Monthly spending</p>
-                </div>
-                <strong>KSh 15,000</strong>
-            </article>
+            </header>
 
-            <article class="card">
-                <div>
-                    <h3>Entertainment</h3>
-                    <p>Monthly spending</p>
-                </div>
-                <strong>KSh 2,500</strong>
-            </article>
 
-            <article class="card">
-                <div>
-                    <h3>Savings</h3>
-                    <p>Monthly savings</p>
-                </div>
-                <strong>KSh 8,000</strong>
-            </article>
+            <!-- Dashboard Content -->
+            <main>
 
-            <article class="card">
-                <div>
-                    <h3>Utilities</h3>
-                    <p>Monthly spending</p>
-                </div>
-                <strong>KSh 3,500</strong>
-            </article>
+                <!-- Overview -->
+                <section class="overview">
 
-        </section>
+                    <div class="section-heading">
+                        <div>
+                            <h2>Financial Overview</h2>
+                            <p>Track your spending and savings.</p>
+                        </div>
+                    </div>
 
-    </main>
 
-</div>
-```
+                    <!-- Category Cards -->
+                    <div class="category-grid">
+
+                        <!-- Food -->
+                        <article class="category-card" tabindex="0">
+                            <div class="card-top">
+                                <span class="card-icon">🍔</span>
+                                <span class="card-label">Food</span>
+                            </div>
+
+                            <div class="card-content">
+                                <h3>Ksh. 4,000</h3>
+                                <p>Monthly spending</p>
+                            </div>
+
+                            <div class="card-footer">
+                                <span>Budget</span>
+                                <strong>Ksh. 5,000</strong>
+                            </div>
+                        </article>
+
+
+                        <!-- Transport -->
+                        <article class="category-card" tabindex="0">
+                            <div class="card-top">
+                                <span class="card-icon">🚌</span>
+                                <span class="card-label">Transport</span>
+                            </div>
+
+                            <div class="card-content">
+                                <h3>Ksh. 5,000</h3>
+                                <p>Monthly spending</p>
+                            </div>
+
+                            <div class="card-footer">
+                                <span>Budget</span>
+                                <strong>Ksh. 6,000</strong>
+                            </div>
+                        </article>
+
+
+                        <!-- Rent -->
+                        <article class="category-card" tabindex="0">
+                            <div class="card-top">
+                                <span class="card-icon">🏠</span>
+                                <span class="card-label">Rent</span>
+                            </div>
+
+                            <div class="card-content">
+                                <h3>Ksh. 8,000</h3>
+                                <p>Monthly spending</p>
+                            </div>
+
+                            <div class="card-footer">
+                                <span>Budget</span>
+                                <strong>Ksh. 8,000</strong>
+                            </div>
+                        </article>
+
+
+                        <!-- Entertainment -->
+                        <article class="category-card" tabindex="0">
+                            <div class="card-top">
+                                <span class="card-icon">🎬</span>
+                                <span class="card-label">Entertainment</span>
+                            </div>
+
+                            <div class="card-content">
+                                <h3>Ksh. 1,500</h3>
+                                <p>Monthly spending</p>
+                            </div>
+
+                            <div class="card-footer">
+                                <span>Budget</span>
+                                <strong>Ksh. 3,000</strong>
+                            </div>
+                        </article>
+
+
+                        <!-- Savings -->
+                        <article class="category-card" tabindex="0">
+                            <div class="card-top">
+                                <span class="card-icon">💰</span>
+                                <span class="card-label">Savings</span>
+                            </div>
+
+                            <div class="card-content">
+                                <h3>Ksh. 3,000</h3>
+                                <p>Monthly savings</p>
+                            </div>
+
+                            <div class="card-footer">
+                                <span>Target</span>
+                                <strong>Ksh. 5,000</strong>
+                            </div>
+                        </article>
+
+
+                        <!-- Utilities -->
+                        <article class="category-card" tabindex="0">
+                            <div class="card-top">
+                                <span class="card-icon">💡</span>
+                                <span class="card-label">Utilities</span>
+                            </div>
+
+                            <div class="card-content">
+                                <h3>Ksh. 1,200</h3>
+                                <p>Monthly spending</p>
+                            </div>
+
+                            <div class="card-footer">
+                                <span>Budget</span>
+                                <strong>Ksh. 2,000</strong>
+                            </div>
+                        </article>
+
+                    </div>
+
+                </section>
+
+
+                <!-- Summary Section -->
+                <section class="summary-section">
+
+                    <div class="summary-box">
+                        <span>Total Budget</span>
+                        <strong>Ksh. 29,000</strong>
+                    </div>
+
+                    <div class="summary-box">
+                        <span>Total Expenses</span>
+                        <strong>Ksh. 19,700</strong>
+                    </div>
+
+                    <div class="summary-box">
+                        <span>Remaining</span>
+                        <strong>Ksh. 9,300</strong>
+                    </div>
+
+                </section>
+
+            </main>
+
+        </div>
+
+    </div>
 
 </body>
 </html>
